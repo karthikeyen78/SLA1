@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+         table, th, td{
+            border-collapse: collapse;
+            border: 1px solid rgb(214, 66, 66);
+            padding: 20px;
+            text-align: center;
+        }
+
+        tr:nth-child(even){
+            background-color: rgb(154, 154, 202);
+        }
+
+        .colSpan{
+            background-color: bisque;
+        }
+
+        .colRight{
+            background-color: rgb(58, 199, 199);
+        }
+    </style>
+
+</head>
+<body>
+
+     <table style="width: 90%; margin:auto;">
+        <caption>Company Details</caption>
+        <colgroup>
+            <col span="2" class="colSpan">
+            <col class="colRight">
+        </colgroup>
+
+                <tr>
+                    <th>Head1</th>
+                    <th>Head2</th>
+                    <th>Head3</th>
+                </tr>
+                <tr>
+                    <td >Row 1,Cell 1</td>
+                    <td > Row 1, Cell 2</td>
+                    <td > Row 1, Cell 3</td>
+
+                </tr>
+
+                <tr>
+                    <td >Row 2,Cell 1</td>
+                    <td > Row 2, Cell 2</td>
+                    <td > Row 2, Cell 3</td>
+
+                </tr>
+
+                <tr>
+                    <td >Row 3,Cell 1</td>
+                    <td > Row 3, Cell 2</td>
+                    <td > Row 3, Cell 3</td>
+
+                </tr>
+
+            </table>
+    
+</body>
+</html>

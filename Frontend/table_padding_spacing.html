@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tables</title> 
+    
+    <style>
+        .withspacing{
+            border-collapse:separate;
+            background-color: rgb(195, 214, 230);
+            border-spacing: 20px;
+            margin: 20px auto;
+            width: 70%;
+            border-color: black;
+        }
+
+        .nospacing
+        {
+            border-collapse:collapse;
+            background-color: rgb(195, 214, 230);
+            margin: 20px auto;
+            width: 70%;
+            border-color: black;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th{
+            background-color: rgb(236, 148, 148);
+        }
+
+    </style>
+</head>
+        <body>
+            <h2 style="text-align: center;">Table with Border Spacing </h2>
+            <table class="withspacing">
+
+                <tr>
+                    <th>Header1</th>
+                    <th>Header2</th>
+                
+                </tr>
+
+                <tr>
+                    <td >A</td>
+                    <td >B</td>
+                </tr>
+
+            </table>
+
+            <h2 style="text-align: center;">Table with collapsed Border</h2>
+             <table class="nospacing">
+
+                <tr>
+                    <th>Header1</th>
+                    <th>Header2</th>
+                
+                </tr>
+
+                <tr>
+                    <td >A</td>
+                    <td >B</td>
+                </tr>
+
+            </table>
+
+        </body>
+
+
+
+</html>

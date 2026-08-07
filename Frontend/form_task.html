@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Forms</title>
+
+    </head>
+    <body>
+        <form action="submit.php" method="post">
+
+            <fieldset style="width: 600px; height: auto; border: 2px solid rgb(132, 63, 63);">
+                <legend style="color: blue; font-size: 24px;">Registration Form</legend>
+
+                <br>
+            <label for="Fullname">Fullname:</label>
+
+            <input type="text" id="fullname" name="Fullname" required value="">
+            <br>
+            <br>
+
+            <label for="email">Email:</label>
+
+            <input type="email" id="emial" name="email" required autocomplete="on">
+
+            <br>
+            <br>
+             <label for="password">Password:</label>
+
+            <input type="password" id="password" name="password" required autocomplete="on">
+
+            <br>
+            <br>
+
+            <label>Gender:</label> 
+         
+                <input type="radio" id="male" name="gender" value="Male"> 
+                <label for="male">Male</label> 
+        
+                <input type="radio" id="female" name="gender" value="Female"> 
+                <label for="female">Female</label> 
+        
+                <input type="radio" id="other" name="gender" value="Other"> 
+                <label for="other">Other</label> 
+                <br>
+                <br> 
+
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone">
+
+            <br><br>
+
+            <label for="favcolor">Select your Favorite colour:</label>
+            <input type="color" id="favcolor" name="favcolor">
+
+            <br>
+            <br>
+
+
+            <label for="dob">Date of Birth:</label> 
+            <input type="date" id="dob" name="dob"> 
+            <br>
+            <br> 
+
+            <label for="datemax">Enter Date before 1980-01-01</label>
+            <input type="date" id="maxdate" name="maxdate" max="1979-01-01">
+
+            <br>
+            <br>
+
+             <label for="datemin">Enter Date After 2000-01-01</label>
+            <input type="date" id="mindate" name="mindate" min="2000-01-01">
+
+            <br>
+            <br>
+
+            <label for="birthdaytime">Enter Birthday Time and Date:</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+            <br>
+            <br>
+ 
+    
+        <label for="course">Select Course:</label> 
+        <select id="course" name="course"> 
+            <option value="">--Select--</option> 
+            <option value="BCA">B.Tech</option> 
+            <option value="BSc">B.Sc</option> 
+            <option value="BA">B.A</option> 
+        </select> 
+        <br>
+        <br> 
+ 
+        <label>Hobbies:</label> 
+ 
+        <input type="checkbox" id="sports" name="hobbies" value="Sports"> 
+        <label for="sports">Sports</label> 
+ 
+        <input type="checkbox" id="music" name="hobbies" value="Music"> 
+        <label for="music">Music</label> 
+ 
+        <input type="checkbox" id="reading" name="hobbies" value="Reading"> 
+        <label for="reading">Reading</label> 
+        <br><br> 
+ 
+        <label for="address">Address:</label> 
+        <textarea id="address" name="address" rows="4" cols="30"></textarea> 
+        <br>
+        <br> 
+ 
+        <label for="phone">Phone No:</label> 
+        <input type="tel" id="phone" name="phone"> 
+
+        <br>
+        <br>
+        <label for="myfile">Select a File</label>
+        <input type="file" id="myfile" name="myfile">
+
+        <br>
+        <br>
+
+        <button type="submit" style="width: 120px;">Submit</button>
+        <button type="reset" style="width: 120px;">Reset</button>
+        <br>
+        <br>
+
+        <div>
+        <button type="submit" name="action" value="save">Save</button>
+        <button type="submit" name="action" value="Delete">Delete
+        </div>
+    
+        </button>
+
+        
+
+
+
+        </fieldset>
+        </form>
+
+    </body>
+</html>
