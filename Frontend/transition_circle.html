@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div.box{
+            border:1px solid red;
+            width: 500px;
+            height: 500px;
+            background-color: orange;
+            transition-property: background-color;
+            transition-property: border-radius;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .box:hover{
+            background-color: brown;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Hover the element below</p>
+        <div class ="box"></div>
+    </div>
+
+    
+</body>
+</html>

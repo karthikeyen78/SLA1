@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .logo{
+            width: 100px;
+            height: 100px;
+            margin:20px auto;
+            border-radius: 50%;
+            background: rgb(78, 78, 135);
+            color: aliceblue;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        @keyframes logoMove{
+            from{
+                transform: translateX(0);
+            }
+
+            to{
+                transform: translateX(250px);
+            }
+        }
+
+        .animation-name{
+            animation-name: logoMove;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate ;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Logo Animations- all 8 CSS animation properties</h1>
+
+    <div class="example">
+        <h2>1.Animation Menu</h2>
+        <p>the logo moves from left to right</p>
+
+        <div class="logo-animation-name">LOGO</div>
+
+    </div>
+    
+</body>
+</html>
