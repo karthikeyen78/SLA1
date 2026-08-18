@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: pink;
+        }
+
+        .flex-container > div{
+            background-color: azure;
+            color: forestgreen;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container" style="background-color: rgb(170, 170, 225);">
+        <div style="flex-grow: 1;">Item 1</div>
+        <div style="flex-grow: 3;">Item 2</div>
+        <div style="flex-grow: 2;">Item 3</div>
+        <div style="flex-grow: 4;">Item 4</div>
+
+
+    </div>
+    
+</body>
+</html>
