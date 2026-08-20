@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var globalVar= "THis is global";
+        let name="Alice";
+        let x=20;
+        let y=10;
+
+        const PI=3.14;
+
+        console.log("the number is "+x);
+
+        function funcscope(){
+
+            var localvar ="Local variable";
+            console.log(globalVar + " " + localvar);
+
+        }
+
+        funcscope();
+
+    </script>
+</body>
+</html>

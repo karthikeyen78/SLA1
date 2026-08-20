@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Variables</title>
+</head>
+
+<body>
+
+    <script>
+        var globalVar = "This is Global Variable";  //Global variable
+
+        console.log(globalVar);
+
+
+        function funcScope(){                      //Function Scope
+            var funcvar="I am function Variable";
+            console.log(funcScope);
+
+        }
+
+        funcScope();
+
+
+        {                                  //Block Scope
+
+            let name = "Alice";
+            let x = 10;
+            x = 40;
+            console.log(x);
+
+            console.log(globalVar + "and  blockScope");
+
+
+            const PI = 3.14;
+
+
+            console.log(PI);
+        }
+
+        {
+            var varInBlock ="i am var inside block"
+        }
+
+        console.log(varInBlock + " var inside block is called here");
+
+
+    </script>
+</body>
+
+</html>
