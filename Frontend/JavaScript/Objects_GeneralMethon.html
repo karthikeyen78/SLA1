@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="showCreate()">Object.create()</button>
+
+    <div id="output"></div>
+
+
+    <script>
+        function showCreate(){
+            const animal={type:"mammal", sound:()=>"generic sound"};
+            const dog =Object.create(animal)
+            dog.name="Buddy";
+
+            document.getElementById("output").innerHTML= JSON.stringify(dog,null,2)
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>
