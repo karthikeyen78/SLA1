@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task</title>
+</head>
+<body>
+    <script>
+
+function add(a, b) {
+  return a + b;
+}
+console.log("1. Add:", add(5, 3));
+
+
+const multiply = function(a, b) {
+  return a * b;
+};
+console.log("2. Multiply:", multiply(4, 2));
+
+
+const subtract = (a, b) => a - b;
+console.log("3. Subtract:", subtract(10, 4));
+
+
+function greetUser(firstName, lastName) {
+  return `Hello, ${firstName} ${lastName}!`; 
+}
+console.log("4. Greeting:", greetUser("Karthik", "K"));
+
+
+console.log();
+let globalVar = "Prime Minister"; // Global 
+
+function StateEmergency() {
+  let localVar = "Chief Minister"; // Local 
+  
+  console.log(`Inside function -> Global : ${globalVar}`); 
+  console.log(`Inside function -> Local : ${localVar}`);   
+}
+
+cityEmergency();
+console.log(`Outside function -> Global: ${globalHero}`); 
+
+
+
+console.log(" Callbacks");
+
+function processPayment(amount, callback) {
+  console.log(`Processing payment of $${amount}...`);
+  callback(); 
+}
+
+function showReceipt() {
+  console.log("Payment successful! Here is your receipt.");
+}
+
+processPayment(50, showReceipt);
+
+
+console.log("Closures");
+
+function createCounter() {
+  let count = 0;
+  
+  return function() {
+    count++;
+    return count;
+  };
+}
+
+const myCounter = createCounter();
+
+console.log("Counter:", myCounter()); 
+console.log("Counter:", myCounter()); 
+console.log("Counter:", myCounter()); 
+    </script>
+</body>
+</html>
