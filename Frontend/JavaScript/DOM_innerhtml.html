@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner Html</title>
+</head>
+
+<body>
+
+    <div id="inner">
+        This is html file
+    </div>
+    <br>
+    <br>
+
+    <button onclick="useInnerHtml()">Click</button>
+
+    <script>
+        function useInnerHtml() {
+            const box = document.getElementById("inner")
+            box.innerHTML = "<strong> Edided using Inner HTML property</strong>"
+
+        }
+
+    </script>
+</body>
+
+</html>

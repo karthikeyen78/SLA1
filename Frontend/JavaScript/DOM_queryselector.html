@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+
+<body>
+
+    <div id="contentbox" class="info">
+        This is Content box
+
+    </div>
+
+    <p class="info">Paragraph 1 with class info</p>
+    <p class="info">Paragraph 2 with class info</p>
+    <p class="info">Paragraph 3 with class info</p>
+    <p class="info">Paragraph 4 with class info</p>
+
+    <button onclick="useQuerySelector()">Click</button>
+
+    <script>
+        function useQuerySelector() {
+            const box = document.querySelector(".info")
+            box.textContent = "Changed using query selctor"
+        }
+    </script>
+</body>
+
+</html>

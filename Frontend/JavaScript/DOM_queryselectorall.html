@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+
+    <div id="contentbox" class="info">
+        This is Content box
+
+    </div>
+
+    <p class="info">Paragraph 1 with class info</p>
+    <p class="info">Paragraph 2 with class info</p>
+    <p class="info">Paragraph 3 with class info</p>
+    <p class="info">Paragraph 4 with class info</p>
+
+    <button onclick="useQuerySelectorAll()">Click</button>
+    
+    <script>
+        function useQuerySelectorAll(){
+            const paras=document.querySelectorAll(".info")
+            paras.forEach((p,i)=>{
+                p.textContent=`Paragraph ${ i + 1} updated using query selector all`
+            })
+        }
+    </script>
+</body>
+</html>

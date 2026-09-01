@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Basics</title>
+</head>
+<body>
+    <h2 id="main">Welcome to DOM Basics</h2>
+    <button onclick="useGetElementById()">GetElementByID</button>
+
+
+    <script>
+        function useGetElementById(){
+            const title = document.getElementById("main");
+            title.textContent="Changed using Get element by id";
+        }
+    </script>
+    
+</body>
+</html>
