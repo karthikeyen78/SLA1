@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;            
+            padding: 1rem 2rem;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .nav-items {
+            display: flex;                  
+            list-style: none;               
+            gap: 1.5rem;                  
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            color: #651c99;
+            font-weight: 500;
+        }
+
+        .about-section {
+            display: flex;
+            flex-direction: column;    
+            align-items: center;         
+            justify-content: center;     
+            text-align: center;
+            padding: 4rem 1rem;
+            background-color: #c1c1e1;
+            gap: 1rem;                  
+        }
+
+        .about-section button {
+            padding: 0.75rem 1.5rem;
+            background-color: #333096;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;            
+            gap: 1.5rem;              
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .card {
+            flex: 1 1 280px;
+            max-width: 360px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;     
+            align-items: center;         
+            padding: 1.5rem;
+            background: #1e293b;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    
+  <header class="navbar"> 
+
+    <div class="logo">Image Gallery</div>
+
+    <ul class="nav-items">
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="about-section">
+    <h1>Gallery Created Using Flexbox</h1>
+    <p><i>A lightweight, responsive gallery </i></p>
+    <button type="button" onclick="alert('This is an image gallery, thanks for viewing!')">Know More</button>
+  </section>
+
+  <main class="content">
+    <div class="card-container">
+      
+      <div class="card">
+        <img src="butterfly.avif" alt="Performance" class="card-img">
+        <div class="card-body">
+          <h3>Butterfly</h3>
+          <p>Butterfly Sitting on a Flower</p>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <img src="bird.jpg" alt="Responsive" class="card-img">
+
+        <div class="card-body">
+          <h3>Bird</h3>
+          <p>Bird Sitting on a tiny branch.</p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="strayberry.jpg" alt="Clean structure" class="card-img">
+
+        <div class="card-body">
+          <h3>Strayberry</h3>
+          <p>Close up Shot of a Strayberry.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Brand, Inc.</p>
+  </footer>
+
+</body>
+</html>
