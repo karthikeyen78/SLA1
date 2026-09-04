@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Combinators task</title>
+  <style>
+    
+    div p {
+      color: red;
+    }
+
+
+    div > p {
+      color: blue;
+    }
+
+    h2 ~ p {
+      color: orange;
+    }
+
+    h2 + p {
+      color: green;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+
+  <div> 
+    <p>Paragraph is in blue colour using child selector div > p </p> 
+    <section> 
+      <p>Paragraph is in red colour using Decendant selector div p - this makes all paragraphs inside div red</p> 
+    </section> 
+  </div> 
+
+  <p>Paragraph is in normal colour without any style</p> 
+
+
+  <h2>Student Details</h2> 
+  <p>Name: Karthik (Used h2+p Adjacent sibbling Combinators)</p> 
+  <p>Age: 21</p> 
+  <p>City: Chennai</p> 
+
+  <i>Age and city are orange because i used general sibbling using h2 ~ p</i>
+
+</body>
+</html>
